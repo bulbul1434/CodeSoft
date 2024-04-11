@@ -1,0 +1,156 @@
+/* Import font */
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+/* Body */
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #f7f7f7;
+  cursor: pointer;
+  }
+
+/* Header */
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+}
+
+.header {
+    background-image: linear-gradient(to bottom right, red, yellow);
+  color: #f7f7f7;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgb(255, 153, 0);
+  text-align: center;
+  height: 60px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.header h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* Styles for screens smaller than 767px */
+@media only screen and (max-width: 767px) {
+  .header-wrapper {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Resize header and center image */
+  .header {
+    background-image: linear-gradient(to bottom right, red, yellow);
+    color: #f7f7f7;
+    padding: 20px;
+    height: auto;
+  }
+
+  .header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 300;
+  }
+
+  .header h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  #img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6px;
+  }
+
+  img {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+/* Main */
+.main {
+  max-width: 1000px;
+  margin: 120px auto 20px;
+  padding: 20px;
+}
+
+/*  image */
+#img-container {
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
+
+img {
+  width: 350px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgb(255, 153, 0);
+  border: 1px solid #000000;
+  transform: 
+}
+
+/* text-container */
+.text-container {
+  line-height: 1.8;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.text-container li {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.text-container ul {
+  font-size: 17px;
+  margin-bottom: 20px;
+  display: inline-block;
+  text-align: left;
+}
+
+/* Paragraph */
+p {
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+/* Footer */
+.footer-wrapper {
+  margin-top: 50px;
+}
+
+.footer {
+    background-image: linear-gradient(to bottom right, red, yellow);
+  color: #f7f7f7;
+  padding: 20px;
+  text-align: center;
+  height: auto;
+}
+
+.footer h5 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 300;
+}
+
